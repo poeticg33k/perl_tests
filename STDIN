@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+my $yen_current_xrate; 
+my $own_yen;
+my $friend1_yen;
+my $friend2_yen;
+print "Currency converter\n\nPlease enter the exchange rate: ";
+$yen_current_xrate = <STDIN>;
+print "how much Yen do you have to convert? "; 
+$own_yen = <STDIN>;
+print "how much Yen does your friend have to convert? "; 
+$friend1_yen = <STDIN>;
+print "how much Yen does your other friend have to convert? "; 
+$friend2_yen = <STDIN>;
+print "How much Yen do you have $own_yen ",  ($own_yen/$yen_current_xrate), " pounds\n";
+print "How much Yen do you have $friend1_yen ",  ($friend1_yen/$yen_current_xrate), " pounds\n";
+print "How much Yen do you have $friend2_yen ",  ($friend2_yen/$yen_current_xrate), " pounds\n";
